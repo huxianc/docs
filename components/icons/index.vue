@@ -27,9 +27,9 @@ const handleCopy = (name) => {
 
 <style module>
 .box {
-  margin-top: 20px;
+  margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-columns: repeat(auto-fill, 92px);
   gap: 24px;
 }
 .item {

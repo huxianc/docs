@@ -3,6 +3,7 @@
 ## Install
 
 ::: code-group
+
 ```bash [pnpm]
 pnpm install bigquant-icons-vue
 ```
@@ -14,15 +15,21 @@ yarn add bigquant-icons-vue
 ```bash [npm]
 npm install bigquant-icons-vue
 ```
+
 :::
 
-## Use(click to copy)
+## Use
+
+### Import
+
 ```js
-import { Add } from 'bigquant-icons-vue'; // 需要什么导入什么
+import { Add } from "bigquant-icons-vue"; // import what you need
 ```
+
+### Usage(click to copy)
+
 <Icons />
 
 <script setup>
 import Icons from "./components/icons/index.vue"
 </script>
-
