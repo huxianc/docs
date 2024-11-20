@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Huxianc's Project",
+  title: "Huxianc's Docs",
   description: "A VitePress Site",
   base: "/docs/",
   themeConfig: {
@@ -16,11 +16,11 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "Icons",
+        text: "BigQuant",
         items: [
           // { text: 'Markdown Examples', link: '/markdown-examples' },
           // { text: 'Runtime API Examples', link: '/api-examples' },
-          { text: "BigQuantIcons", link: "/icons" },
+          { text: "Icons", link: "/icons" },
         ],
       },
     ],

@@ -38,6 +38,10 @@ const handleCopy = (name) => {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.item:hover {
+  transform: scale(1.4);
 }
 .icon {
   width: 24px;
