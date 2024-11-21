@@ -15,8 +15,11 @@ importers:
         specifier: ^4.2.6
         version: 4.2.6(vue@3.5.13)
       bigquant-icons-vue:
-        specifier: ^0.0.2
-        version: 0.0.2(vue@3.5.13)
+        specifier: latest
+        version: 0.0.4(vue@3.5.13)
+      fuzzysearch:
+        specifier: ^1.0.3
+        version: 1.0.3
       vue:
         specifier: ^3.5.13
         version: 3.5.13
@@ -572,8 +575,8 @@ packages:
   async-validator@4.2.5:
     resolution: {integrity: sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==}
 
-  bigquant-icons-vue@0.0.2:
-    resolution: {integrity: sha512-AG1rfdg/kIQKG0xUoIA26USsH0qk0vwbGtx39VyvuASaYiahCylo+Jamv1IpfsSbwz4xOOmgveTC8eB9KC+jHA==}
+  bigquant-icons-vue@0.0.4:
+    resolution: {integrity: sha512-bMfxuaw4F/byHQY8Hm7Kik7Boow+VB4h1wtjg1Hc4GLwKVLsvtBwBozBufd3IyBv1nAWA5dEK6Qcqy3kX1il1A==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -640,6 +643,9 @@ packages:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+
+  fuzzysearch@1.0.3:
+    resolution: {integrity: sha512-s+kNWQuI3mo9OALw0HJ6YGmMbLqEufCh2nX/zzV5CrICQ/y4AwPxM+6TIiF9ItFCHXFCyM/BfCCmN57NTIJuPg==}
 
   hast-util-to-html@9.0.3:
     resolution: {integrity: sha512-M17uBDzMJ9RPCqLMO92gNNUDuBSq10a25SDBI08iCCxmorf4Yy6sYHK57n9WAbRAAaU+DuR4W6GN9K4DFZesYg==}
@@ -1400,7 +1406,7 @@ snapshots:
 
   async-validator@4.2.5: {}
 
-  bigquant-icons-vue@0.0.2(vue@3.5.13):
+  bigquant-icons-vue@0.0.4(vue@3.5.13):
     dependencies:
       vue: 3.5.13
 
@@ -1472,6 +1478,8 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
+
+  fuzzysearch@1.0.3: {}
 
   hast-util-to-html@9.0.3:
     dependencies:
