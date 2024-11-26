@@ -10,24 +10,33 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      // { text: 'Examples', link: '/markdown-examples' },
-      { text: "Icons", link: "/icons" },
+      { text: "BigQuant", link: "/bigquant/icons" },
+      { text: "Vue3", link: "/vue3/tips" },
     ],
 
-    sidebar: [
-      {
-        text: "BigQuant",
+    sidebar: {
+      "/bigquant": {
+        base: "/bigquant/",
         items: [
-          // { text: 'Markdown Examples', link: '/markdown-examples' },
-          // { text: 'Runtime API Examples', link: '/api-examples' },
-          { text: "Icons", link: "/icons" },
+          {
+            text: "lib",
+            items: [{ text: "Icons", link: "/icons" }],
+          },
         ],
       },
-    ],
 
-    socialLinks: [
-      { icon: "github", link: "https://github.com/huxianc/docs" },
-    ],
+      "/vue3": {
+        base: "/vue3/",
+        items: [
+          {
+            text: "tips",
+            items: [{ text: "tips", link: "/tips" }],
+          },
+        ],
+      },
+    },
+
+    socialLinks: [{ icon: "github", link: "https://github.com/huxianc/docs" }],
   },
   // vite:{
   //   plugins
