@@ -12,7 +12,7 @@ hero:
       link: /bigquant/icons
     - theme: alt
       text: utils
-      link: /huxianc-utils/number
+      link: /huxianc-utils/number/formatNumberWithSeparator
 
 # features:
 #   - title: Feature A
