@@ -14,6 +14,9 @@ const handleChildMounted = () => {
 ```
 
 ## 组件二次封装
+
+#### 方法一
+
 ```vue
 <!-- 子组件 -->
 <template>
@@ -43,13 +46,12 @@ defineExpose(
   )
 );
 </script>
-
 ```
 
 ```vue
 <!-- 父组件 -->
 <a-button @click="handleClick">Click me</a-button>
-    <TestInput v-model:value="msg" ref="inputRef">
+<TestInput v-model:value="msg" ref="inputRef">
       <template #addonAfter>
         <span>Click me</span>
       </template>
@@ -62,5 +64,19 @@ const inputRef = ref();
 const handleClick = () => {
   inputRef.value.focus();
 };
+</script>
+```
+
+#### 方法二
+```vue
+<!-- 子组件 -->
+<template>
+  <div>Hello world</div>
+  <component :is="h(Input, $attrs, $slots)" />
+</template>
+
+<script lang="ts" setup>
+import { h } from "vue";
+import { Input } from "ant-design-vue";
 </script>
 ```

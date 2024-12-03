@@ -25,6 +25,30 @@ export default defineConfig({
         ],
       },
 
+      "/huxianc-utils": {
+        base: "/huxianc-utils/",
+        items: [
+          {
+            base: "/huxianc-utils/number/",
+            items: [
+              {
+                text: "Number",
+                items: [{ text: "formatNumberWithSeparator", link: "/formatNumberWithSeparator" }],
+              },
+            ],
+          },
+          {
+            base: "/huxianc-utils/color/",
+            items: [
+              {
+                text: "Color",
+                items: [{ text: "hex2rgba", link: "/hex2rgba" }],
+              },
+            ],
+          },
+        ],
+      },
+
       "/vue3": {
         base: "/vue3/",
         items: [
@@ -38,7 +62,4 @@ export default defineConfig({
 
     socialLinks: [{ icon: "github", link: "https://github.com/huxianc/docs" }],
   },
-  // vite:{
-  //   plugins
-  // }
 });
