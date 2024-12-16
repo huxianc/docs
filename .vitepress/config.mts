@@ -29,22 +29,21 @@ export default defineConfig({
         base: "/huxianc-utils/",
         items: [
           {
-            base: "/huxianc-utils/number/",
+            text: "Number",
             items: [
               {
-                text: "Number",
-                items: [{ text: "formatNumberWithSeparator", link: "/formatNumberWithSeparator" }],
+                text: "formatNumberWithSeparator",
+                link: "/number/formatNumberWithSeparator",
+              },
+              {
+                text: "storage",
+                link: "/number/storage",
               },
             ],
           },
           {
-            base: "/huxianc-utils/color/",
-            items: [
-              {
-                text: "Color",
-                items: [{ text: "hex2rgba", link: "/hex2rgba" }],
-              },
-            ],
+            text: "Color",
+            items: [{ text: "all", link: "/color/all" }],
           },
         ],
       },

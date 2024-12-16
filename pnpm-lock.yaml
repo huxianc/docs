@@ -21,8 +21,8 @@ importers:
         specifier: ^1.0.3
         version: 1.0.3
       huxianc-utils:
-        specifier: ^0.0.2
-        version: 0.0.2
+        specifier: ^0.0.5
+        version: 0.0.5
       vue:
         specifier: ^3.5.13
         version: 3.5.13
@@ -653,8 +653,8 @@ packages:
   html-void-elements@3.0.0:
     resolution: {integrity: sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg==}
 
-  huxianc-utils@0.0.2:
-    resolution: {integrity: sha512-WwmHLBF3opYf86Zr3I1d5+KrUY3ULZjjttsTrKfEpqByKuWHtgPOlIFqUKD6MxXlSrgmWM4N9ty2pqyk2sCm5Q==}
+  huxianc-utils@0.0.5:
+    resolution: {integrity: sha512-AVV0sglHUKDdoviv6Q2z7iTxqySiqyGyOYx0cTWpLEODfblL58ar01+oGbTeZ7Oeho7IcQRdmeEA9dCWfJvxxw==}
 
   is-plain-object@3.0.1:
     resolution: {integrity: sha512-Xnpx182SBMrr/aBik8y+GuR4U1L9FqMSojwDQwPMmxyC6bvEqly9UBCxhauBF5vNh2gwWJNX6oDV7O+OM4z34g==}
@@ -1500,7 +1500,7 @@ snapshots:
 
   html-void-elements@3.0.0: {}
 
-  huxianc-utils@0.0.2: {}
+  huxianc-utils@0.0.5: {}
 
   is-plain-object@3.0.1: {}
 
