@@ -10,9 +10,9 @@
 import { ref } from "vue";
 import Item from "./item.vue";
 
-const longTopValue = ref(24.35);
+const longTopValue = ref(30);
 
-const mediumTopValue = ref(50);
+const mediumTopValue = ref(70);
 
 const shortTopValue = ref(10);
 </script>

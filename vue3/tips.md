@@ -68,6 +68,7 @@ const handleClick = () => {
 ```
 
 #### 方法二
+
 ```vue
 <!-- 子组件 -->
 <template>

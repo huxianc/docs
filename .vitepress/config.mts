@@ -55,6 +55,13 @@ export default defineConfig({
             text: "tips",
             items: [{ text: "tips", link: "/tips" }],
           },
+          {
+            text: "hooks",
+            items: [
+              { text: "useCreateReusableTemplate", link: "/useCreateReusableTemplate" },
+              { text: "useResettable", link: "/useResettable" },
+            ],
+          },
         ],
       },
     },
