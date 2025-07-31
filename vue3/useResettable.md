@@ -1,3 +1,8 @@
+---
+prev:
+  text: useCreateReusableTemplate
+  link: '/vue3/useCreateReusableTemplate.html'
+---
 ## 重置 ref 或者 reactive 数据
 
 ```ts

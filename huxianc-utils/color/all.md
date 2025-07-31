@@ -1,4 +1,4 @@
-## 之前没发现[@ctrl/tinycolor](https://github.com/scttcper/tinycolor)，建议使用此工具包
+## 之前没发现[@ctrl/tinycolor](https://github.com/scttcper/tinycolor)，建议使用此工具包，[使用](https://tinycolor.vercel.app/)
 
 - [github](https://github.com/scttcper/tinycolor)
 - [npm](https://www.npmjs.com/package/@ctrl/tinycolor)

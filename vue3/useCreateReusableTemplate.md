@@ -1,3 +1,9 @@
+---
+next:
+  text: useResettable
+  link: '/vue3/useResettable.html'
+---
+
 ## template 中定义组件并复用
 
 ```vue

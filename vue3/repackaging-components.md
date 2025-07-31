@@ -1,8 +1,38 @@
-## 组件二次封装
+# 组件二次封装
 
-#### 最终方法（可以无视）
+#### 最终方法（可以无视下面的方法）
 
-#### 方法一
+```vue
+<template>
+  <div>
+    <div>二次封装 input 自定义的内容</div>
+    <component
+      :is="h(Input, { ...$attrs, ...props, ref: changeRef }, $slots)"
+    />
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { h, getCurrentInstance } from "vue";
+import { Input } from "ant-design-vue";
+import type { InputProps } from "ant-design-vue";
+
+// bool类型 默认值为true的 未设置默认值vue会把他设置为undefined
+const props = withDefaults(defineProps<Partial<InputProps>>(), {
+  bordered: true,
+});
+
+const vm = getCurrentInstance();
+
+function changeRef(inputInstance) {
+  if (vm) {
+    vm.exposed = vm.exposeProxy = inputInstance || {};
+  }
+}
+</script>
+```
+
+#### 远古方法
 
 ```vue
 <!-- 子组件 -->
@@ -51,20 +81,5 @@ const inputRef = ref();
 const handleClick = () => {
   inputRef.value.focus();
 };
-</script>
-```
-
-#### 方法二
-
-```vue
-<!-- 子组件 -->
-<template>
-  <div>Hello world</div>
-  <component :is="h(Input, $attrs, $slots)" />
-</template>
-
-<script lang="ts" setup>
-import { h } from "vue";
-import { Input } from "ant-design-vue";
 </script>
 ```
